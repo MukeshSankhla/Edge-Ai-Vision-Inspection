@@ -1,0 +1,12 @@
+C1A
+C1N
+C2A
+C2N
+IA
+IN
+PA
+PN
+SA
+SN
+UA
+UN

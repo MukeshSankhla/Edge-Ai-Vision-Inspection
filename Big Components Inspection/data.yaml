@@ -1,0 +1,18 @@
+# Big Components Inspection - YOLO Dataset Configuration
+path: C:/Users/MAKERBRAINS/Downloads/Big Components Inspection/yolo_dataset
+train: images/train
+val: images/val
+
+names:
+  0: C1A
+  1: C1N
+  2: C2A
+  3: C2N
+  4: IA
+  5: IN
+  6: PA
+  7: PN
+  8: SA
+  9: SN
+  10: UA
+  11: UN

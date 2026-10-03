@@ -1,0 +1,30 @@
+path: C:/Users/MAKERBRAINS/Downloads/Edge Ai Vision Inspection/Small Componets Inspection/yolo_dataset
+train: images/train
+val: images/val
+names:
+  0: C1A
+  1: C1N
+  2: C2A
+  3: C2N
+  4: C3A
+  5: C3N
+  6: C4A
+  7: C4N
+  8: C5A
+  9: C5N
+  10: C6A
+  11: C6N
+  12: C7A
+  13: C7N
+  14: L1A
+  15: L1N
+  16: L2A
+  17: L2N
+  18: R1A
+  19: R1N
+  20: R3A
+  21: R3N
+  22: R4A
+  23: R4N
+  24: R5A
+  25: R5N

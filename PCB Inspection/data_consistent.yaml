@@ -1,0 +1,5 @@
+path: C:/Users/MAKERBRAINS/Downloads/Edge Ai Vision Inspection/PCB Inspection/yolo_dataset_consistent
+train: images/train
+val: images/val
+names:
+  0: Issue

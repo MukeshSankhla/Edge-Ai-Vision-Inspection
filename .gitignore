@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch / Ultralytics cache & checkpoints
+*.cache
+runs/
+*.pt
+
+# Calibration & intermediate NumPy tensor dumps
+*.npy
+*.npz
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

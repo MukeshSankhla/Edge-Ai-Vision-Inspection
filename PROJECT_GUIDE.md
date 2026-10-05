@@ -1,5 +1,7 @@
 # Edge AI Vision Inspection System: Transforming a $60 SBC into an Industrial Inspection Station
 
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/Cover.gif)
+
 What if a $60 SBC could turn a simple webcam into a complete industrial vision inspection system? That was the idea behind this project. At the heart of the system is the **Arduino UNO Q**, a compact Linux-capable single-board computer that brings enough processing power to run modern AI workloads at the edge. Combined with **Edge Impulse**, it becomes possible to take computer-vision models developed on a PC and bring them directly onto an embedded device for real-time inspection—without relying on the cloud.
 
 For this project, I built a **six-slot rotating vision inspection station** using the Arduino UNO Q, a webcam, and a servo motor. A board placed into one of the six slots is automatically rotated into the inspection position, where the camera captures it and the AI pipeline determines what is present and what needs to be inspected. The system first identifies whether the slot is empty, contains a bare PCB, or contains an assembled PCBA:
@@ -9,6 +11,12 @@ For this project, I built a **six-slot rotating vision inspection station** usin
 The interesting part is that the AI models were trained separately using **YOLO** and then brought into **Edge Impulse using Bring Your Own Model (BYOM)**. Edge Impulse essentially becomes the bridge between model development and deployment—it packages the models, manages the edge inference pipeline, and makes it much easier to deploy and run the vision workload directly on the UNO Q. The result is a small, self-contained inspection station combining AI vision, robotics, and edge computing into one system.
 
 What started as an experiment with a camera, a rotating platform, and an Arduino UNO Q turned into a miniature automated quality-inspection line—the kind of system that can continuously look at physical products, make decisions locally, and trigger the next action without needing a human to inspect every board.
+
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/1.gif)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/2.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/3.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/4.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/5.JPG)
 
 ---
 
@@ -21,9 +29,17 @@ What started as an experiment with a camera, a rotating platform, and an Arduino
 - 1× [USB Hub](https://www.amazon.in/dp/B0BR3M8XHK?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1)
 - Fasteners & Screws: 4× M2 screws, 4× M3×10mm screws, 4× M3×4mm screws, Servo horn screws
 
+
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/6.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/7.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/8.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/9.JPG)
+
 ---
 
 ## 📐 CAD & 3D Printing
+
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/10.png)
 
 To turn the electronics and vision system into a proper standalone inspection station, I designed a custom enclosure in Fusion 360. The design is split into five 3D-printed parts, with each part having a specific role in the system:
 
@@ -37,20 +53,34 @@ All five parts were designed with easy assembly and accessibility in mind, so th
 
 * **Fusion 360 Design URL:** [Autodesk Viewer / Download](https://a360.co/4xOSRFz)
 
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/11.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/12.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/13.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/14.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/15.JPG)
+
 ---
 
 ## 🔧 Assembly Guide
 
 ### Servo Assembly
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/16.JPG)
 Start with the 3D-printed Body and the DF DSS-M15S servo. Place the servo into the dedicated mounting slot in the body and align the screw holes with the mounting points. Once aligned, secure the servo using the four screws supplied with the servo. Make sure the servo is firmly mounted and does not move inside the enclosure, as any mechanical play can affect the positioning accuracy of the rotating plate.
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/17.JPG)
 
 ### Arduino UNO Q Assembly
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/18.JPG)
 Next, install the Arduino UNO Q inside the 3D-printed Body. Align the board with the printed standoffs and make sure the USB Type-C port lines up with the opening in the enclosure. Once everything is correctly aligned, secure the Arduino UNO Q using four M2 screws.
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/19.JPG)
 
 ### Pole Mount Assembly
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/20.JPG)
 Take the 3D-printed Pole and Pole Mount and align the two parts together. Secure them using 2 × M3 × 10 mm screws. Make sure the pole is firmly attached, as it will hold the camera and LED assembly above the rotating inspection plate.
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/21.JPG)
 
 ### Camera & LED Assembly
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/23.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/22.JPG)
 1. For the camera, first remove the camera PCB from the Logitech C270 housing, leaving the camera module and PCB exposed.
 2. Take the camera PCB and carefully slide it into the designated slot inside the 3D-printed Pole. Align the camera with the opening at the top of the pole and route the USB/camera wires through the hollow section of the pole. This keeps the wiring hidden and gives the assembly a clean appearance.
 3. Next, prepare the WS2812B RGB LED by soldering three wires to it:
@@ -60,6 +90,10 @@ Take the 3D-printed Pole and Pole Mount and align the two parts together. Secure
 4. Route these wires through the hollow section of the pole as well.
 5. Now take the Pole Cover and mount the WS2812B LED into the dedicated LED opening. Apply a small amount of glue to secure the LED in place.
 6. Finally, snap the Pole Cover onto the top of the Pole. The cover should fit securely. If the fit is slightly loose, apply a small amount of quick-setting glue to hold it in place.
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/24.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/25.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/26.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/27.JPG)
 
 ### Connections
 To connect the WS2812B RGB LED and the servo motor to the Arduino UNO Q, first prepare a few header pins and solder the connections as follows:
@@ -71,17 +105,24 @@ To connect the WS2812B RGB LED and the servo motor to the Arduino UNO Q, first p
 | **Servo Signal** | Signal wire to header pin | **Pin 9** |
 | **LED S-IN (Data)** | Data wire to header pin | **Pin 8** |
 
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/28.JPG)
+
 ### Pole and Body Assembly
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/29.JPG)
 Now it's time to attach the completed Pole Assembly to the main Body. Align the Pole Assembly with the mounting points on the Body and make sure the camera USB cable is correctly routed through the designated opening. Before tightening the screws, neatly manage the excess camera and RGB LED wires inside the Body so they do not interfere with the servo or rotating mechanism.
 
 Once everything is properly aligned and the wiring is clear, secure the Pole Assembly to the Body using 2 × M3 × 10 mm screws.
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/30.JPG)
 
 ### Rotating Plate Assembly
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/31.JPG)
 1. Take the 3D-printed Rotating Plate and the servo horn that came with the servo. Align the servo horn with the mounting points on the Rotating Plate and snap it into position.
 2. Secure the servo horn to the Rotating Plate using 4 × M3 × 4 mm screws.
 3. Next, take the completed Rotating Plate assembly and align the servo horn with the servo shaft already mounted in the Body. Carefully press the assembly onto the servo shaft, making sure it is properly seated and aligned.
 4. Finally, use the servo screw supplied with the servo to secure the Rotating Plate assembly to the servo shaft.
-
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/32.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/33.JPG)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/34.JPG)
 And that's it! The mechanical assembly is complete.
 
 ---

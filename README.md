@@ -5,6 +5,9 @@ An industrial-grade, multi-stage Automated Optical Inspection (AOI) platform eng
 
 Designed for edge deployment on the **Arduino UNO Q (Qualcomm QRB2210 Linux MPU + STM32U585 Zephyr MCU)** as well as standard Linux AArch64 / x86 SBCs and Windows workstations.
 
+> 📖 **Project Story & Step-by-Step Build Tutorial:**
+> Looking for the complete build walkthrough, 3D printing guide, Edge Impulse BYOM workflow, and step-by-step setup? Read the **[Project Guide & Build Tutorial](file:///c:/Users/MAKERBRAINS/Downloads/Edge%20Ai%20Vision%20Inspection/PROJECT_GUIDE.md)**!
+
 ---
 
 ## 📑 Table of Contents

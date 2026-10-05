@@ -18,6 +18,16 @@ What started as an experiment with a camera, a rotating platform, and an Arduino
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/4.JPG)
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/5.JPG)
 
+## Project Resources
+- **Author:** [Mukesh Sankhla](https://www.linkedin.com/in/mukeshsankhla/)
+- **GitHub Repository:** [Edge AI Vision Inspection](https://github.com/MukeshSankhla/Edge-Ai-Vision-Inspection)
+- **CAD Design (Fusion 360):** [Enclosure & Turntable Model](https://a360.co/4xOSRFz)
+- **Edge Impulse Public Models:**
+  - [Slot Occupancy Detection](https://studio.edgeimpulse.com/public/1123393/live)
+  - [PCB Defect Inspection](https://studio.edgeimpulse.com/public/1125264/live)
+  - [PCBA Big Component Inspection](https://studio.edgeimpulse.com/public/1125284/live)
+  - [PCBA Small Component Inspection](https://studio.edgeimpulse.com/public/1125307/live)
+
 ---
 
 ## 🛠️ Components
@@ -64,23 +74,34 @@ All five parts were designed with easy assembly and accessibility in mind, so th
 ## 🔧 Assembly Guide
 
 ### Servo Assembly
+
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/16.JPG)
+
 Start with the 3D-printed Body and the DF DSS-M15S servo. Place the servo into the dedicated mounting slot in the body and align the screw holes with the mounting points. Once aligned, secure the servo using the four screws supplied with the servo. Make sure the servo is firmly mounted and does not move inside the enclosure, as any mechanical play can affect the positioning accuracy of the rotating plate.
+
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/17.JPG)
 
 ### Arduino UNO Q Assembly
+
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/18.JPG)
+
 Next, install the Arduino UNO Q inside the 3D-printed Body. Align the board with the printed standoffs and make sure the USB Type-C port lines up with the opening in the enclosure. Once everything is correctly aligned, secure the Arduino UNO Q using four M2 screws.
+
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/19.JPG)
 
 ### Pole Mount Assembly
+
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/20.JPG)
+
 Take the 3D-printed Pole and Pole Mount and align the two parts together. Secure them using 2 × M3 × 10 mm screws. Make sure the pole is firmly attached, as it will hold the camera and LED assembly above the rotating inspection plate.
+
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/21.JPG)
 
 ### Camera & LED Assembly
+
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/23.JPG)
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/22.JPG)
+
 1. For the camera, first remove the camera PCB from the Logitech C270 housing, leaving the camera module and PCB exposed.
 2. Take the camera PCB and carefully slide it into the designated slot inside the 3D-printed Pole. Align the camera with the opening at the top of the pole and route the USB/camera wires through the hollow section of the pole. This keeps the wiring hidden and gives the assembly a clean appearance.
 3. Next, prepare the WS2812B RGB LED by soldering three wires to it:
@@ -90,6 +111,7 @@ Take the 3D-printed Pole and Pole Mount and align the two parts together. Secure
 4. Route these wires through the hollow section of the pole as well.
 5. Now take the Pole Cover and mount the WS2812B LED into the dedicated LED opening. Apply a small amount of glue to secure the LED in place.
 6. Finally, snap the Pole Cover onto the top of the Pole. The cover should fit securely. If the fit is slightly loose, apply a small amount of quick-setting glue to hold it in place.
+
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/24.JPG)
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/25.JPG)
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/26.JPG)
@@ -108,21 +130,28 @@ To connect the WS2812B RGB LED and the servo motor to the Arduino UNO Q, first p
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/28.JPG)
 
 ### Pole and Body Assembly
+
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/29.JPG)
+
 Now it's time to attach the completed Pole Assembly to the main Body. Align the Pole Assembly with the mounting points on the Body and make sure the camera USB cable is correctly routed through the designated opening. Before tightening the screws, neatly manage the excess camera and RGB LED wires inside the Body so they do not interfere with the servo or rotating mechanism.
 
 Once everything is properly aligned and the wiring is clear, secure the Pole Assembly to the Body using 2 × M3 × 10 mm screws.
+
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/30.JPG)
 
 ### Rotating Plate Assembly
+
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/31.JPG)
+
 1. Take the 3D-printed Rotating Plate and the servo horn that came with the servo. Align the servo horn with the mounting points on the Rotating Plate and snap it into position.
 2. Secure the servo horn to the Rotating Plate using 4 × M3 × 4 mm screws.
 3. Next, take the completed Rotating Plate assembly and align the servo horn with the servo shaft already mounted in the Body. Carefully press the assembly onto the servo shaft, making sure it is properly seated and aligned.
 4. Finally, use the servo screw supplied with the servo to secure the Rotating Plate assembly to the servo shaft.
+
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/32.JPG)
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/33.JPG)
 ![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/34.JPG)
+
 And that's it! The mechanical assembly is complete.
 
 ---
@@ -132,6 +161,11 @@ And that's it! The mechanical assembly is complete.
 As mentioned earlier, for this project I am using a custom battery charging and discharging circuit PCB, but the same approach can be applied to almost any PCB or PCBA depending on your inspection requirements.
 
 The first step is to build the dataset for each of the four vision models. Since the final system will use the same webcam and camera position, it is important to capture the training images using the same camera and setup that will be used during the actual inspection. I connected the webcam to my PC, opened the Camera app, and captured multiple images of the different inspection conditions. I captured images of an empty slot, bare PCB, and assembled PCBA, along with different examples of the defects and components that I wanted the models to learn. In general, having more representative images for each condition gives the model more examples to learn from and can help improve its ability to generalize.
+
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/35.jpg)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/36.jpg)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/37.jpg)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/38.jpg)
 
 Once the images were collected, I imported the dataset into [Make Sense](https://www.makesense.ai/), an online annotation tool, and started labeling the images according to the requirements of each model.
 
@@ -153,6 +187,9 @@ Once the images were collected, I imported the dataset into [Make Sense](https:/
    - `IA` / `IN` — Inductor Available / Not Available
    - `PA` / `PN` — Power IC Available / Not Available
 
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/39.gif)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/40.gif)
+
 4. **PCBA Small Component Inspection Model (Object Detection for 0805 components):**
    - `L1A` / `L1N`, `L2A` / `L2N` — LEDs
    - `C1A` / `C1N` through `C7A` / `C7N` — Capacitors
@@ -163,6 +200,8 @@ This naming convention makes it easier for the final application to understand n
 After annotating all the images, I exported the annotations from Make Sense as a single CSV file. This labeled dataset is then used as the foundation for training the individual machine-learning models.
 
 ### Dataset Organization
+
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/41.png)
 
 Before moving on to model training, make sure the datasets are organized properly. Since we are training four different models, I recommend keeping each model's dataset completely separate:
 
@@ -237,6 +276,13 @@ python train.py --epochs 80 --batch 8 --device 0
 
 The training process took approximately 48 seconds for 80 epochs on the RTX 5070 Ti. During training, the model learns the visual characteristics of each component and the difference between the Available (A) and Not Available/Missing (N) classes.
 
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/42.png)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/43.png)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/44.png)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/45.png)
+
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/46.png)
+
 ### Evaluating and Testing the YOLO Model
 After training the YOLO model, the next step is to evaluate its performance using the validation dataset.
 
@@ -245,6 +291,10 @@ For the example Big Component Inspection model:
 - **Recall:** 100%
 - **mAP@0.5:** 99.50%
 - **mAP@0.5:0.95:** 89.60%
+
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/47.png)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/48.png)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/49.png)
 
 After checking the numerical metrics, I also performed test inference on the images to visually verify the detections. The model correctly identified all six large components on fully populated boards and classified the corresponding components as missing on bare/unpopulated boards. Visual verification confirms that bounding boxes are correctly positioned and that the model detects the expected components before moving to deployment.
 
@@ -269,6 +319,10 @@ Once the YOLO model has been trained and tested successfully, the next step is t
 The same training process is followed for the other inspection models. Once the models are exported to ONNX, we bring them into Edge Impulse using Bring Your Own Model (BYOM).
 
 ### Creating the Edge Impulse Project
+
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/50.png)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/51.png)
+
 1. Open [Edge Impulse Studio](https://studio.edgeimpulse.com/) and log into your account.
 2. Click **Create New Project** and enter a name.
 3. In the project dashboard, click **Upload your Model**.
@@ -277,7 +331,13 @@ The same training process is followed for the other inspection models. Once the 
 6. Select **Arduino Uno Q** as the target device.
 7. Click **Upload**.
 
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/52.png)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/53.png)
+
 ### Configuring the Imported Model
+
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/54.png)
+
 Use the following settings:
 - **Model Input:** Image
 - **Model Output:** Object Detection
@@ -295,8 +355,9 @@ Use the following settings:
 
 ### Testing and Building the Model
 - In Edge Impulse, upload validation images to **Data Acquisition**, go to **Model Testing**, and click **Classify All**.
-- You can also use **Live Classification** directly in the browser to point your webcam at the PCB/PCBA and inspect real-time predictions.
-- On the **Deployment** page, select **Arduino UNO Q** and click **Build** to download the standalone `.eim` executable binary.
+
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/55.png)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/56.png)
 
 #### Public Model Links
 - [Slot Occupancy Model](https://studio.edgeimpulse.com/public/1123393/live)
@@ -307,6 +368,11 @@ Use the following settings:
 ---
 
 ## ⚡ Deploying the Vision Inspection System on Arduino UNO Q
+
+- You can also use **Live Classification** directly in the browser to point your webcam at the PCB/PCBA and inspect real-time predictions.
+- On the **Deployment** page, select **Arduino UNO Q** and click **Build** to download the standalone `.eim` executable binary.
+
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/57.png)
 
 With all four `.eim` files ready, we deploy the complete system to the Arduino UNO Q:
 
@@ -328,6 +394,8 @@ BMS EIM Vision Inspection/
 ├── requirements.txt
 └── README.md
 ```
+
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/58.png)
 
 ### Inspection Pipeline Flow
 1. **Camera Acquisition:** The webcam continuously captures the inspection area.
@@ -369,6 +437,9 @@ This clean separation allows the Linux MPU to focus on computer vision and infer
 ## 🚀 Step-by-Step Setup & Execution
 
 ### 1. Flash Arduino Firmware
+
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/59.png)
+
 1. Open the Arduino IDE on your computer.
 2. Open [`bms_servo_led.ino`](file:///c:/Users/MAKERBRAINS/Downloads/Edge%20Ai%20Vision%20Inspection/BMS%20EIM%20Vision%20Inspection/arduino_firmware/bms_servo_led/bms_servo_led.ino) located in:
    `BMS EIM Vision Inspection/arduino_firmware/bms_servo_led/bms_servo_led.ino`
@@ -406,6 +477,8 @@ Check whether the first slot is aligned with the camera. If it is slightly off, 
    ```
    *(If your webcam is assigned to a different index, try `--source 1` or `--source 2`).*
 
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/60.png)
+
 ### 4. Running the Application on Subsequent Boots
 ```bash
 ssh arduino@192.168.1.18
@@ -420,6 +493,11 @@ Open any browser on the local network and navigate to:
 http://192.168.1.18:5000/
 ```
 
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/61.png)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/62.png)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/63.png)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/64.png)
+
 The web dashboard displays:
 - Live inspection camera stream with detection overlays
 - Current slot number and inspection status (Empty, PCB, PCBA, Pass/Fail)
@@ -430,21 +508,12 @@ The web dashboard displays:
 
 ## 🏁 Conclusion
 
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/1.gif)
+![Cover](https://raw.githubusercontent.com/MukeshSankhla/Edge-Ai-Vision-Inspection/main/Images/GIF2_optimized.gif)
+
 This project demonstrates how edge AI turns low-cost hardware into an industrial-grade vision inspection station. By combining mechanical 3D design, custom YOLO11 models, Edge Impulse BYOM packaging, and the dual-brain Arduino UNO Q, we created a self-contained, real-time AOI system that operates entirely offline without cloud dependencies.
 
 The core workflow:
 $$\text{Define Inspection} \rightarrow \text{Design Hardware} \rightarrow \text{Collect Data} \rightarrow \text{Train YOLO} \rightarrow \text{Optimize via BYOM} \rightarrow \text{Deploy to UNO Q} \rightarrow \text{Automate}$$
 
 This blueprint can be directly adapted for manufacturing quality control, assembly verification, packaging inspection, sorting, and edge robotics.
-
----
-
-## 📚 Project Resources
-
-- **GitHub Repository:** [Edge AI Vision Inspection](https://github.com/MukeshSankhla/Edge-Ai-Vision-Inspection)
-- **CAD Design (Fusion 360):** [Enclosure & Turntable Model](https://a360.co/4xOSRFz)
-- **Edge Impulse Public Models:**
-  - [Slot Occupancy Detection](https://studio.edgeimpulse.com/public/1123393/live)
-  - [PCB Defect Inspection](https://studio.edgeimpulse.com/public/1125264/live)
-  - [PCBA Big Component Inspection](https://studio.edgeimpulse.com/public/1125284/live)
-  - [PCBA Small Component Inspection](https://studio.edgeimpulse.com/public/1125307/live)
